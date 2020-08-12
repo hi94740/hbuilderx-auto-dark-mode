@@ -1,0 +1,46 @@
+{
+  "name": "auto-dark-mode",
+  "description": "根据系统暗黑模式设置自动切换HBuilderX主题",
+  "displayName": "Auto Dark Mode",
+  "version": "0.0.1",
+  "publisher": "hi94740",
+	"license":"MIT",
+	"repository":"https://github.com/hi94740/hbuilderx-auto-dark-mode",
+  "engines": {
+    "HBuilderX": "^2.7.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "main": "./extension",
+  "dependencies": {
+    "dark-mode-listener": "^0.1.2"
+  },
+  "contributes": {
+    "configuration": {
+      "title": "Auto Dark Mode",
+      "properties": {
+        "autoDarkMode.lightTheme": {
+          "description": "亮色主题",
+          "type": "string",
+          "default": "绿柔",
+          "enum": [
+            "绿柔",
+            "酷黑",
+            "雅蓝"
+          ]
+        },
+				"autoDarkMode.darkTheme": {
+				  "description": "暗色主题",
+				  "type": "string",
+				  "default": "雅蓝",
+				  "enum": [
+				    "绿柔",
+				    "酷黑",
+				    "雅蓝"
+				  ]
+				}
+      }
+    }
+  }
+}
